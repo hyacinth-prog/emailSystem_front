@@ -13,7 +13,7 @@ export const getVerify = (): userType => {
 
 // 登录
 export const getLogin = (data: object) => {
-  return http.request("post", "api/login", { data });
+  return http.request("post", "api/user/login", { data });
 };
 
 // 刷新token
